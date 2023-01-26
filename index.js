@@ -12,7 +12,7 @@ sdk.auth('jz+WSYVeXGV/qhURChompGmymedaEinC+VpVo8QIoUkEVlttAfsofXN8/OYcdX9I');
 
 app.get('/calendarr/:id', (req, res) => {
     const id = req.params.id;
-  sdk.getCalendarByProperty({start: '2021-1-1', end: '2024-1-30' , propertyId: id})
+  sdk.getCalendarByProperty({start: '2022-1-1', end: '2024-1-30' , propertyId: id})
     .then(({ data }) => res.json(data))
     .catch(err => res.json(err));
 });
